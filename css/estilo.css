@@ -366,36 +366,84 @@ label {
 }
 
  /*? Estilos Titulos */
- .section-titulos {
+.section-introduccion {
   text-align: center;
-  margin: 20px;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  padding: 5px 5px;
+  margin: 15px 0;
 }
 
-.container-cards-titulos {
+.section-titulos {
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 50px 10px 20px 10px;
+  padding: 10px;
+}
+
+/** Estilos para section dependiendo equipo  */
+.section-barca {
+  background-color: blue;
+}
+
+.section-barca h2 {
+  color: white;
+}
+
+.section-psg {
+  background-color: red;
+}
+.section-titulos h2 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.container-cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   background-color: #fff;
+  border-radius: 5px;
 }
 
 .cardTrofeo {
-  width: 200px;
+  text-align: center;
   margin: 10px;
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid black;
-}
-.cardTrofeo:hover {
-  color: rgb(192, 165, 43);
-  transition: 0.5s
+  flex: 1;
+  color: #000;
+  border-radius: 8px;
 }
 
-.titulosLogo {
-  width: 80px;
-  height: 140px;
-  margin: 0 auto 10px;
-  display: block;
-  background-color: rgb(192, 165, 43);
-  padding: 5px;
-  border-radius: 3px;
+.cardTrofeo p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/** Estilos diferentes para las cartas de cada equipo */
+.card-arg {
+  background-color: rgb(75, 185, 248);
+}
+
+.card-barca {
+  background-color: rgb(228, 20, 20);
+}
+
+.card-psg {
+  background-color: rgb(38, 38, 211);
+}
+
+
+.logo-trofeos {
+  width: 95px;
+  height: 150px;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.logo-trofeos:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
