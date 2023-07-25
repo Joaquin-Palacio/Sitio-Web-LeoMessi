@@ -1,0 +1,401 @@
+/*! Estilos reseteados */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*? Estilos Body */
+body {
+ background-image: url('../assets/background.jpg');
+ background-position: center top;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+/*? Estilos Headear */
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #000;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.navbar li a:hover {
+  color: rgb(33, 203, 255);
+  transition: 0.5s;
+}
+
+/*! MEDIAS QUERIES ----------------------------------------- */
+/** Pantallas medianas y grandes */
+@media screen and ( min-width: 768px ) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar ul {
+    list-style: none;
+  }
+
+  .navbar li {
+    display: inline-block;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+    font-size: 20px;
+  }
+
+  .navbar li a:hover {
+    color: rgb(33, 203, 255);
+    transition: 0.5s;
+  }
+}
+
+/** Pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .navbar li a {
+    font-size: 16px;
+  }
+}
+
+
+/*? Estilos Main */
+main {
+  margin: 10px;
+  padding: 20px;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+/*? Estilos Section Dorsales  */
+.section-dorsales {
+  margin-top: 50px;
+  text-align: center;
+}
+
+ .section-dorsales h2 {
+   display: inline-block;
+   background-color: #fff;
+   padding: 5px;
+   border-radius: 2px;
+}
+
+.container-img-dorsales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.card {
+  border-radius: 8px;
+  background-color:rgba(39, 176, 255, 0.514);
+  width: 350px;
+  padding: 5px;
+}
+.card:hover {
+  background-color: rgba(39, 176, 255, 0.74);
+  transition: 0.5s;
+}
+
+.img-dorsales {
+  width: 100%;
+  height: 250px; 
+  border-radius: 8px 8px 0 0; 
+}
+
+.card-text p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*? Estilos Section Iframe */
+.section-goles-arg {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.section-goles-arg h3 {
+  font-weight: bold;
+  margin: 10px;
+  color: #000;
+  text-align: center;
+  text-decoration: underline;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.container-iframe {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporción 16:9 (para videos de YouTube) */
+  height: 0;
+  overflow: hidden;
+}
+
+.container-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+
+/*? Estilos Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.footer p {
+  flex: 1; /* Permite que el texto ocupe el espacio disponible */
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer ul {
+  list-style: none;
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin: 0 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+}
+
+/*! MEDIAS QUERIES ----------------------------------------  */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer p,
+  .footer ul {
+    flex: none; /* Evitamos que los elementos ocupen todo el ancho disponible */
+  }
+
+  .footer ul li {
+    margin: 5px 0;
+  }
+}
+
+/*? Estilos Estadisticas */
+.section-stats {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.section-stats h3 {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container-images {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias líneas en dispositivos pequeños */
+  justify-content: center; /* Centramos las imágenes horizontalmente */
+  gap: 10px; /* Agregamos un espaciado de 10px entre las imágenes en vista de escritorio */
+  margin-bottom: 10px;
+}
+
+.container-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Agregamos un margen inferior para separar las imágenes */
+}
+
+.section-stats table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.section-stats th,
+.section-stats td {
+  padding: 8px;
+  text-align: center;
+}
+
+.section-stats th {
+  background-color: rgba(39, 176, 255, 0.514);
+  font-weight: bold;
+}
+
+.section-stats tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.section-stats tr:hover {
+  background-color: #e5e5e5;
+}
+
+.container-logo-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Agregamos un margen inferior para separar los logos */
+}
+
+.logo-stats {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Limitamos la altura máxima para que los logos no sean muy grandes */
+  margin: 5px 0 10px 0;
+  padding: 0;
+}
+
+/*? Estilos Contacto */
+.container-contacto {
+  color: white;
+  padding: 20px;
+}
+
+.container-gift {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-gift img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.label-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-form {
+  background-color: rgb(0, 189, 0);
+  margin: 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  background-color: green;
+}
+
+ /*? Estilos Titulos */
+ .section-titulos {
+  text-align: center;
+  margin: 20px;
+}
+
+.container-cards-titulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.cardTrofeo {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.cardTrofeo:hover {
+  color: rgb(192, 165, 43);
+  transition: 0.5s
+}
+
+.titulosLogo {
+  width: 80px;
+  height: 140px;
+  margin: 0 auto 10px;
+  display: block;
+  background-color: rgb(192, 165, 43);
+  padding: 5px;
+  border-radius: 3px;
+}
