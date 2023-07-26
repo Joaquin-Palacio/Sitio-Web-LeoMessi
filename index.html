@@ -2,156 +2,177 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="imagen/png" href="./assets/logo-pagina.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+  <link rel="icon" type="imagen/png" href="../assets/logo-pagina.png">
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="./css/estilo.css">
-
   <title>Sitio Web - Lionel Messi</title>
-
 </head>
 
 <body>
 
-  <!-- Arranca el navbar de la pagina con un logo y las otras secciones -->
   <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <nav class="navbar">
+      <div class="container">
 
-      <a href="index.html">
-        <img class="logo" src="./assets/logo-pagina.png" alt="Logo de Lionel Messi">
-      </a>
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo-pagina.png" alt="Logo" class="logo-pagina">
+        </a>
 
-      <ul>
-        <li> <a href="index.html"> Home </a> </li>
-        <li> <a href="./pages/biografia.html"> Biografía </a> </li>
-        <li> <a href="./pages/estadisticas.html"> Estadísticas </a> </li>
-        <li> <a href="./pages/titulos.html"> Títulos </a> </li>
-        <li> <a href="./pages/contacto.html"> Contacto </a> </li>
-      </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    </nav>
+        <div class="container-ul collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
 
-  </header>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
 
-  <!-- Empieza el contenido principal de esta pagina con dos secciones -->
-  <main>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/biografia.html">Biografía</a>
+            </li>
 
-    <h1 class="tituloPrincipal"> Sitio Web sobre Lionel Messi </h1>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/estadisticas.html">Estadísticas</a>
+            </li>
 
-    <section class="section-dorsales">
-      <h2> Dorsales </h2>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/titulos.html">Títulos</a>
+            </li>
 
-      <div class="container-img-dorsales">
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
 
-        <div class="card">
-          <div class="card-text">
-            <p> 10 de Argentina</p>
-          </div>
-          <img src="./assets/argentina-10.jpg" alt="Imagen de Messi con Argentina" class="img-dorsales">
-        </div>
-
-        <div class="card">
-          <div class="card-text">
-            <p> 18 de Argentina</p>
-          </div>
-          <img src="./assets/argentina-18.jpg" alt="Imagen de Messi con Argentina" class="img-dorsales">
-        </div>
-
-        <div class="card">
-          <div class="card-text">
-            <p> 19 de Argentina</p>
-          </div>
-          <img src="./assets/argentina-19.jpg" alt="Imagen de Messi con Argentina" class="img-dorsales">
-        </div>
-
-        <div class="card">
-          <div class="card-text">
-            <p> 10 del Barcelona</p>
-          </div>
-          <img src="./assets/barcelona-10.jpg" alt="Imagen de Messi con Barcelona" class="img-dorsales">
-        </div>
-
-        <div class="card">
-          <div class="card-text">
-            <p> 19 del Barcelona</p>
-          </div>
-          <img src="./assets/barcelona-19.jpg" alt="Imagen de Messi con Barcelona" class="img-dorsales">
-        </div>
-
-        <div class="card">
-          <div class="card-text">
-            <p> 30 del Barcelona</p>
-          </div>
-          <img src="./assets/barcelona-30.jpg" alt="Imagen de Messi con Barcelona" class="img-dorsales">
-        </div>
-
-        <div class="card">
-          <div class="card-text">
-            <p> 10 del PSG</p>
-          </div>
-          <img src="./assets/psg-10.jpg" alt="Imagen de Messi con el PSG" class="img-dorsales">
-        </div>
-
-        <div class="card">
-          <div class="card-text">
-            <p> 30 del PSG</p>
-          </div>
-          <img src="./assets/psg-30.jpg" alt="Imagen de Messi con el PSG" class="img-dorsales">
-        </div>
-
-        <div class="card">
-          <div class="card-text">
-            <p> 10 del Inter Miami</p>
-          </div>
-          <img src="./assets/inter-10.jpg" alt="Imagen de Messi con Inter Miami" class="img-dorsales">
+          </ul>
         </div>
 
       </div>
 
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section-figures mb-4">
+
+      <h2 class="text-center">Dorsales</h2>
+
+      <div class="container">
+        <div class="row">
+
+          <figure class="figure col-12 col-md-6 col-lg-4">
+            <img src="./assets/argentina-10.jpg" alt="Messi con la 10 Argentina" class="figure-img rounded">
+            <figcaption class="figure-caption ">
+              10 de Argentina
+            </figcaption>
+          </figure>
+
+          <figure class="figure col-12 col-md-6 col-lg-4">
+            <img src="./assets/argentina-18.jpg" alt="Messi con la 18 Argentina" class="figure-img rounded">
+            <figcaption class="figure-caption ">
+              18 de Argentina
+            </figcaption>
+          </figure>
+           
+          <figure class="figure col-12 col-md-6 col-lg-4">
+            <img src="./assets/argentina-19.jpg" alt="Messi con la 19 Argentina" class="figure-img rounded">
+            <figcaption class="figure-caption ">
+              19 de Argentina
+            </figcaption>
+          </figure>
+           
+          <figure class="figure col-12 col-md-6 col-lg-4">
+            <img src="./assets/barcelona-10.jpg" alt="Messi con la 10 del Barcelona" class="figure-img rounded">
+            <figcaption class="figure-caption ">
+              10 del Barcelona
+            </figcaption>
+          </figure>
+           
+          <figure class="figure col-12 col-md-6 col-lg-4">
+            <img src="./assets/barcelona-19.jpg" alt="Messi con la 19 del Barcelona" class="figure-img rounded">
+            <figcaption class="figure-caption ">
+              19 del Barcelona
+            </figcaption>
+          </figure>
+           
+          <figure class="figure col-12 col-md-6 col-lg-4">
+            <img src="./assets/barcelona-30.jpg" alt="Messi con la 30 del Barcelona" class="figure-img rounded">
+            <figcaption class="figure-caption ">
+              30 del Barcelona
+            </figcaption>
+          </figure>
+           
+          <figure class="figure col-12 col-md-6 col-lg-4">
+            <img src="./assets/inter-10.jpg" alt="Messi con la 10 de Inter Miami" class="figure-img rounded">
+            <figcaption class="figure-caption ">
+              10 de Inter Miami
+            </figcaption>
+          </figure>
+           
+          <figure class="figure col-12 col-md-6 col-lg-4">
+            <img src="./assets/psg-30.jpg" alt="Messi con la 30 del PSG" class="figure-img rounded">
+            <figcaption class="figure-caption ">
+              30 del PSG
+            </figcaption>
+          </figure>
+           
+          <figure class="figure col-12 col-md-6 col-lg-4">
+            <img src="./assets/psg-10.jpg" alt="Messi con la 10 del PSG" class="figure-img rounded">
+            <figcaption class="figure-caption ">
+              10 del PSG
+            </figcaption>
+          </figure>
+         
+        </div>
+      </div>
     </section>
 
-    <section class="section-goles-arg">
+    <section class="section-video mt-4">
 
-      <h3>Todos los goles de Leo con la Selección Argentina</h3>
-
+      <h3 class="text-center">Cada gol de Messi con la Selección Argentina</h3>
+     
       <div class="container-iframe">
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/KyKJ--7WSGk" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
+
       </div>
 
     </section>
 
   </main>
 
-  <!-- Y por ultimo tenemos el footer con links para ir a las redes sociales -->
   <footer class="footer">
-
-    <p>
-      Copyright © 2023 Todos los derechos reservados - <a href="#">Términos y Condiciones</a> - <a href="#">Políticas de
-        Privacidad</a>
-    </p>
-
-    <ul>
-      <li>
-        <a href="https://www.youtube.com" target="_blank"> Youtube </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com" target="_blank"> Instagram </a>
-      </li>
-      <li>
-        <a href="https://www.twitter.com" target="_blank"> Twitter </a>
-      </li>
-    </ul>
-
+    <div class="container">
+      <p>Derechos de autor © 2023 - Todos los derechos reservados</p>
+      <ul class="social-media">
+        <li>
+          <a href="#" target="_blank">Facebook</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">Instagram</a>
+        </li>
+      </ul>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
 </body>
 
