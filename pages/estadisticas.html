@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="imagen/png" href="../assets/logo-pagina.png">
-   <!-- Boostrap -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-   integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
- <!-- CSS -->
- <link rel="stylesheet" href="../css/estilo.css">
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/estilo.css">
 
   <title>Estadísticas - Lionel Messi</title>
 
@@ -63,140 +63,161 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
-    <h1 class="text-center"> Estadísticas del 10 </h1>
+    <h1 class="text-center">Estadísticas del 10</h1>
 
     <section class="section-stats">
 
-      <h3> Estadísticas de toda su carrera </h3>
+      <h3>Estadísticas de toda su carrera</h3>
 
       <div class="container-images">
-        <img src="../assets/messi-total.jpg" alt="Imagen de Leo besando la copa del mundo">
-        <img src="../assets/messi-total2.jpg" alt="Imagen de Leo con la copa de la champions league">
+          <img src="../assets/messi-total.jpg" alt="Imagen de Leo besando la copa del mundo" class="img-fluid">
+          <img src="../assets/messi-total2.jpg" alt="Imagen de Leo con la copa de la champions league" class="img-fluid">
       </div>
 
-      <table class="table-container">
-        <tbody>
-
-          <tr>
-            <th> Partidos </th>
-            <th> Goles </th>
-            <th> Promedio </th>
-            <th> Asistencias </th>
-            <th> Promedio </th>
-            <th> Total G + A </th>
-          </tr>
-
-          <tr>
-            <td> 1028 </td>
-            <td> 807 </td>
-            <td> 0,79 G/P </td>
-            <td> 357 </td>
-            <td> 0,35 A/P </td>
-            <td> 1164 </td>
-          </tr>
-
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-hover text-center rounded">
+          <thead>
+            <tr>
+              <th class="table-info">Temporada</th>
+              <th class="table-info">Partidos</th>
+              <th class="table-info">Goles</th>
+              <th class="table-info">Promedio</th>
+              <th class="table-info">Asistencias</th>
+              <th class="table-info">Promedio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2005/06 - 2023/24</td>
+              <td>1028</td>
+              <td>807</td>
+              <td>0,79 G/P</td>
+              <td>357</td>
+              <td>0,35 A/P</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
     </section>
 
-    
     <section class="section-stats">
-      
-      <h3>Con la Selección</h3>
-      <div class="container-logo-stats">
-        <img class="logo-stats" src="../assets/logo-afa.png" alt="Logo AFA">
+
+    <h3>Con la Selección</h3>
+      <div class="container-logo-stats text-center rounded">
+        <img class="logo-stats img-fluid" src="../assets/logo-afa.png" alt="Logo AFA">
       </div>
 
-      <table class="table-container">
-        <tbody>
-
-          <tr>
-            <th> Partidos </th>
-            <th> Goles </th>
-            <th> Promedio </th>
-            <th> Asistencias </th>
-            <th> Promedio </th>
-            <th> Total G + A </th>
-          </tr>
-
-          <tr>
-            <td> 175 </td>
-            <td> 103 </td>
-            <td> 0,59 G/P </td>
-            <td> 54 </td>
-            <td> 0,31 A/P </td>
-            <td> 157 </td>
-          </tr>
-
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-hover text-center">
+          <thead>
+            <tr>
+              <th class="table-info">Temporada</th>
+              <th class="table-info">Partidos</th>
+              <th class="table-info">Goles</th>
+              <th class="table-info">Promedio</th>
+              <th class="table-info">Asistencias</th>
+              <th class="table-info">Promedio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2005</td>
+              <td>175</td>
+              <td>103</td>
+              <td>0,59 G/P</td>
+              <td>54</td>
+              <td>0,31 A/P</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="section-stats">
 
       <h3>Con el Barcelona</h3>
-      <div class="container-logo-stats">
-        <img class="logo-stats" src="../assets/logo-barcelona.png" alt="Logo Barcelona">
+      <div class="container-logo-stats text-center rounded">
+        <img class="logo-stats img-fluid" src="../assets/logo-barcelona.png" alt="Logo Barcelona">
       </div>
-      
-      <table class="table-container">
-        <tbody>
 
-          <tr>
-            <th> Partidos </th>
-            <th> Goles </th>
-            <th> Promedio </th>
-            <th> Asistencias </th>
-            <th> Promedio </th>
-            <th> Total G + A </th>
-          </tr>
-
-          <tr>
-            <td> 778 </td>
-            <td> 672 </td>
-            <td> 0,86 G/P </td>
-            <td> 269 </td>
-            <td> 0,35 A/P </td>
-            <td> 941 </td>
-          </tr>
-
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-hover text-center">
+          <thead>
+            <tr>
+              <th class="table-info">Temporada</th>
+              <th class="table-info">Partidos</th>
+              <th class="table-info">Goles</th>
+              <th class="table-info">Promedio</th>
+              <th class="table-info">Asistencias</th>
+              <th class="table-info">Promedio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2022</td>
+              <td>778</td>
+              <td>672</td>
+              <td>0,86 G/P</td>
+              <td>269</td>
+              <td>0,35 A/P</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="section-stats">
 
       <h3>Con el Paris Saint Germain</h3>
-      <div class="container-logo-stats">
-        <img class="logo-stats" src="../assets/logo-psg.png" alt="Logo PSG">
+      <div class="container-logo-stats text-center rounded">
+        <img class="logo-stats img-fluid" src="../assets/logo-psg.png" alt="Logo PSG">
       </div>
-      
-      <table class="table-container">
-        <tbody>
 
-          <tr>
-            <th> Partidos </th>
-            <th> Goles </th>
-            <th> Promedio </th>
-            <th> Asistencias </th>
-            <th> Promedio </th>
-            <th> Total G + A </th>
-          </tr>
-
-          <tr>
-            <td> 75 </td>
-            <td> 32 </td>
-            <td> 0,43 G/P </td>
-            <td> 34 </td>
-            <td> 0,45 A/P </td>
-            <td> 66 </td>
-          </tr>
-
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-hover text-center">
+          <thead>
+            <tr>
+              <th class="table-info">Temporada</th>
+              <th class="table-info">Partidos</th>
+              <th class="table-info">Goles</th>
+              <th class="table-info">Promedio</th>
+              <th class="table-info">Asistencias</th>
+              <th class="table-info">Promedio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021/22</td>
+              <td>34</td>
+              <td>11</td>
+              <td>0,32 G/P</td>
+              <td>14</td>
+              <td>0,41 A/P</td>
+            </tr>
+          <!-- Cambio de Temporada -->
+            <tr>
+              <td>2022/23</td>
+              <td>41</td>
+              <td>21</td>
+              <td>0,51 G/P</td>
+              <td>20</td>
+              <td>0,49 A/P</td>
+            </tr>
+            <!-- Total -->
+            <tr class="table-danger">
+              <td>Total</td>
+              <td>75</td>
+              <td>32</td>
+              <td>0,43 G/P</td>
+              <td>34</td>
+              <td>0,45 A/P</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
   </main>

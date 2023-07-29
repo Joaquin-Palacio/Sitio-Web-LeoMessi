@@ -119,28 +119,8 @@ main {
 }
 
 .section-stats table {
-  width: 100%;
   border-collapse: collapse;
   margin-bottom: 10px;
-}
-
-.section-stats th,
-.section-stats td {
-  padding: 8px;
-  text-align: center;
-}
-
-.section-stats th {
-  background-color: rgba(39, 176, 255, 0.514);
-  font-weight: bold;
-}
-
-.section-stats tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.section-stats tr:hover {
-  background-color: #e5e5e5;
 }
 
 .container-logo-stats {
@@ -150,13 +130,14 @@ main {
   margin-bottom: 10px;
 }
 
+
 .logo-stats {
   max-width: 100%;
   height: auto;
   max-height: 200px;
   margin: 5px 0 10px 0;
   padding: 0;
-}
+} 
 
 
 /*? Estilos Titulos ---------------------------------------------*/
