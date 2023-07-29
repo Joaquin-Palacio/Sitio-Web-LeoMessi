@@ -6,10 +6,10 @@
 
 body {
   background-image: url("../assets/background.jpg");
-  background-repeat: no-repeat; /* Evita que la imagen se repita vertical y horizontalmente */
-  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo del cuerpo */
-  background-position: center top; /* Centra la imagen en el cuerpo */
-  background-attachment: fixed; /* Fija la imagen de fondo */
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center top; 
+  background-attachment: fixed; 
 }
 
 h1, h2, h3 {
