@@ -40,8 +40,56 @@ main {
 /*? Estilos Footer ----------------------------------------------------  */
 .footer {
   background-color: #fff;
+  color: #000;
+  padding: 20px 0;
 }
 
+.footer p {
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+}
+
+.footer .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer .social-icons a {
+  color: #000;
+  font-size: 28px;
+  margin: 5px 20px;
+}
+
+.footer .social-icons a:hover {
+  color: #aaa;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .footer .row {
+    flex-direction: column-reverse;
+  }
+
+  .footer .col-md-6 {
+    width: 100%;
+  }
+
+  .footer .social-icons {
+    text-align: center;
+  }
+
+  .footer .social-icons li {
+    margin: 5px 0;
+  }
+}
 
 
 /*? Section Dorsales -------------------------------------------------------- */
