@@ -1,13 +1,14 @@
-// Variables 
-$green-color: rgb(0, 189, 0);
-$dark-green-color: green;
-$grey-color: #aaa;
+// Variables
+$white-color: #fff;
+$black-color: #000;
 $border-radius: 8px;
+
+$grey-color: #707070;
 
 // Mixins 
 @mixin title-style {
   font-size: 1.4rem;
-  color: white;
+  color: $white-color;
   padding: 5px 5px;
   margin: 15px 0;
   font-weight: 400;
@@ -18,27 +19,30 @@ $border-radius: 8px;
   margin: 10px;
   padding: 10px;
   flex: 1;
-  color: #000;
+  color: $black-color;
   border-radius: $border-radius;
 
   p {
-    color: white;
+    color: $white-color;
     font-weight: bold;
   }
 }
 
 @mixin button-style {
-  background-color: $green-color;
+  background-color: #00bd00;
   margin: 5px;
   padding: 12px;
   border: none;
   border-radius: $border-radius;
-  color: white;
+  color: $white-color;
   cursor: pointer;
-
+  font-size: 16px;
+  font-weight: bolder;
+  
   &:hover {
-    background-color: $dark-green-color;
-  }
+    transition: 0.8s;
+    background-color: #008000;
+   }
 }
 
 /* Estilos generales */
@@ -58,11 +62,12 @@ body {
 h1,
 h2,
 h3 {
-  color: #fff;
+  color: $white-color;
 }
 
 h1 {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 /* Estilos Header ------------------------ */
@@ -84,8 +89,8 @@ main {
 
 /* Estilos Footer ----------------------------------- */
 .footer {
-  background-color: #fff;
-  color: #000;
+  background-color: $white-color;
+  color: $black-color;
   padding: 20px 0;
 
   p {
@@ -106,7 +111,7 @@ main {
     }
 
     a {
-      color: #000;
+      color: $black-color;
       font-size: 28px;
       margin: 5px 20px;
 
@@ -145,7 +150,7 @@ main {
 
   .container-img-dorsales {
     padding: 10px;
-    background-color: #fff;
+    background-color: $white-color;
 
     p {
       font-size: 20px;
@@ -200,13 +205,13 @@ main {
 
 /* Estilos Estadisticas ------------------------------------ */
 .section-stats {
-  background-color: #fff;
+  background-color: $white-color;
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
 
   h3 {
-    color: #000;
+    color: $black-color;
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
@@ -251,7 +256,7 @@ main {
 /* Estilos Titulos -------------------------------- */
 .section-introduccion {
   font-size: 1.4rem;
-  color: white;
+  color: $white-color;
   padding: 5px 5px;
   margin: 15px 0;
   font-weight: 400;
@@ -263,7 +268,7 @@ main {
 }
 
 .section-titulos {
-  background-color: #fff;
+  background-color: $white-color;
   border-radius: 4px;
   margin: 50px 10px 20px 10px;
   padding: 10px;
@@ -271,7 +276,7 @@ main {
   h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 20px 0 0 10px;
-    color: #000;
+    color: $black-color;
   }
 }
 
@@ -280,11 +285,11 @@ main {
   margin: 10px;
   padding: 10px;
   flex: 1;
-  color: #000;
+  color: $black-color;
   border-radius: $border-radius;
 
   p {
-    color: white;
+    color: $white-color;
     font-weight: bold;
   }
 
@@ -326,7 +331,7 @@ main {
 
 /* Estilos Contacto --------------------------------*/
 .container-contacto {
-  color: white;
+  color: $white-color;
   padding: 20px;
 }
 
@@ -349,6 +354,7 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
+  font-size: 22px;
 }
 
 .label-input {
@@ -360,3 +366,5 @@ label {
 .btn-form {
   @include button-style;
 }
+
+
