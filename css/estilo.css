@@ -84,6 +84,19 @@ main {
   }
 }
 
+/* Estilos btn-arrow-up */
+.btn-arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(98, 211, 255);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
 /* Estilos Section Dorsales --------------------------------- */
 .transform-class:hover {
   transform: scale(1.1);
@@ -273,7 +286,8 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .label-input {
