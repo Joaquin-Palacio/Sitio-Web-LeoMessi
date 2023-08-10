@@ -116,7 +116,6 @@ main {
     }
   }
 
-  /* Estilos para dispositivos móviles -------------------------- */
   @media (max-width: 767px) {
     .row {
       flex-direction: column-reverse;
@@ -137,20 +136,28 @@ main {
 }
 
 /* Estilos Section Dorsales --------------------------------- */
-.container-img-dorsales {
-  padding: 10px;
-  background-color: #fff;
+.transform-class {
 
-  p {
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  &:hover {
+    transform: scale(1.1);
+    transition: 1s;
   }
-}
 
-.img-dorsales {
-  width: 380px;
-  height: 280px;
+  .container-img-dorsales {
+    padding: 10px;
+    background-color: #fff;
+
+    p {
+      font-size: 20px;
+      font-weight: bolder;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  }
+
+  .img-dorsales {
+    width: 380px;
+    height: 280px;
+  }
 }
 
 /* Estilos Section Video ------------------------------- */
@@ -185,6 +192,7 @@ main {
     text-decoration: underline;
     font-style: italic;
   }
+
   p {
     font-weight: bold;
   }
