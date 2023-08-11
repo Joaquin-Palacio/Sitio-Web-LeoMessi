@@ -133,12 +133,9 @@ main {
 }
 
 /* Estilos Biografia ------------------------------------- */
-.img-bio {
-  width: 450px;
-}
 .img-bio img {
-  width: 400px;
-  height: 250px;
+  width: 100%;
+  height: auto;
 }
 
 .section-style-bio h4 {
