@@ -12,9 +12,7 @@ body {
   background-attachment: fixed;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   color: #fff;
 }
 
@@ -33,6 +31,11 @@ h1 {
 
 .container-ul {
   display: flex;
+}
+.container-ul li a {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
 }
 
 main {
@@ -133,17 +136,15 @@ main {
 }
 
 /* Estilos Biografia ------------------------------------- */
-.img-bio img {
-  width: 100%;
-  height: auto;
-}
-
 .section-style-bio h4 {
   text-decoration: underline;
   font-style: italic;
 }
 .section-style-bio p {
   font-weight: bold;
+}
+.section-style-bio img {
+  width: 80%;
 }
 
 /* Estilos Estadisticas ------------------------------------ */
@@ -215,7 +216,9 @@ main {
   color: #000;
 }
 
-.cardTrofeo {
+/* Estilos diferentes para las cartas de cada equipo ------------ */
+.card-arg {
+  background-color: rgb(75, 185, 248);
   text-align: center;
   margin: 10px;
   padding: 10px;
@@ -223,29 +226,58 @@ main {
   color: #000;
   border-radius: 8px;
 }
-.cardTrofeo p {
+.card-arg p {
   color: #fff;
   font-weight: bold;
 }
-.cardTrofeo .trofeo-name {
+.card-arg .trofeo-name {
   font-size: 24px;
   margin-bottom: 5px;
 }
-.cardTrofeo .trofeo-year {
+.card-arg .trofeo-year {
   font-size: 16px;
-}
-
-/* Estilos diferentes para las cartas de cada equipo ------------ */
-.card-arg {
-  background-color: rgb(75, 185, 248);
 }
 
 .card-barca {
   background-color: rgb(228, 20, 20);
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  flex: 1;
+  color: #000;
+  border-radius: 8px;
+}
+.card-barca p {
+  color: #fff;
+  font-weight: bold;
+}
+.card-barca .trofeo-name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.card-barca .trofeo-year {
+  font-size: 16px;
 }
 
 .card-psg {
   background-color: rgb(38, 38, 211);
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  flex: 1;
+  color: #000;
+  border-radius: 8px;
+}
+.card-psg p {
+  color: #fff;
+  font-weight: bold;
+}
+.card-psg .trofeo-name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.card-psg .trofeo-year {
+  font-size: 16px;
 }
 
 .logo-trofeos {
@@ -278,13 +310,16 @@ main {
 form {
   max-width: 500px;
   margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .label-input {
