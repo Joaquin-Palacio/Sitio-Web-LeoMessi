@@ -143,9 +143,14 @@ main {
 .section-style-bio {
   background-color: #fff;
 }
-.section-style-bio h4 {
+.section-style-bio h2 {
   text-decoration: underline;
   font-style: italic;
+  color: #000;
+}
+.section-style-bio h3 {
+  color: #000;
+  font-size: 20px;
 }
 .section-style-bio p {
   font-weight: bold;
@@ -161,7 +166,7 @@ main {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.section-stats h3 {
+.section-stats h2 {
   color: #000;
   font-size: 24px;
   margin-bottom: 10px;

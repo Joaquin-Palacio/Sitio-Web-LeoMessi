@@ -210,9 +210,15 @@ main {
 .section-style-bio {
   background-color: $white-color;
 
-  h4 {
+  h2 {
     text-decoration: underline;
     font-style: italic;
+    color: $black-color;
+  }
+
+  h3 {
+    color: $black-color;
+    font-size: 20px;
   }
 
   p {
@@ -231,7 +237,7 @@ main {
   border-radius: 5px;
   margin-bottom: 20px;
 
-  h3 {
+  h2 {
     color: $black-color;
     font-size: 24px;
     margin-bottom: 10px;
