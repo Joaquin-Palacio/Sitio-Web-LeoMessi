@@ -69,6 +69,11 @@ h1 {
 }
 
 /* Estilos Header ------------------------ */
+
+header nav {
+  background-color: $white-color;
+}
+
 .logo-pagina {
   width: 4.688rem;
   height: 4.688rem;
@@ -201,7 +206,10 @@ main {
 
 /* Estilos Biografia ------------------------------------- */
 
+
 .section-style-bio {
+  background-color: $white-color;
+
   h4 {
     text-decoration: underline;
     font-style: italic;
