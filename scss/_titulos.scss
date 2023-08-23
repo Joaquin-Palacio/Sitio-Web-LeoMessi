@@ -1,0 +1,54 @@
+/* Estilos Titulos -------------------------------- */
+.section-introduccion {
+  font-size: 1.4rem;
+  color: $white-color;
+  padding: 5px 5px;
+  margin: 15px 0;
+  font-weight: 400;
+
+  p {
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
+.section-titulos {
+  background-color: $white-color;
+  border-radius: 4px;
+  margin: 50px 10px 20px 10px;
+  padding: 10px;
+
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px 0 0 10px;
+    color: $black-color;
+  }
+}
+
+/* Estilos diferentes para las cartas de cada equipo ------------ */
+.card-arg {
+  background-color: rgb(75, 185, 248);
+  @include trophy-card-style;
+}
+
+.card-barca {
+  background-color: rgb(228, 20, 20);
+  @include trophy-card-style;
+}
+
+.card-psg {
+  background-color: rgb(38, 38, 211);
+  @include trophy-card-style;
+}
+
+.logo-trofeos {
+  width: 95px;
+  height: 150px;
+  object-fit: contain;
+  margin: 10px;
+
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+}

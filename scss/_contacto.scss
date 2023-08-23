@@ -1,0 +1,41 @@
+/* Estilos Contacto --------------------------------*/
+.container-contacto {
+  color: $white-color;
+  padding: 20px;
+}
+
+.container-gift {
+  text-align: center;
+  margin-bottom: 20px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: $border-radius;
+  color: $white-color;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.label-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-form {
+  @include button-style;
+}

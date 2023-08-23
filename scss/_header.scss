@@ -1,0 +1,22 @@
+/* Estilos Header ------------------------ */
+
+header nav {
+  background-color: $white-color;
+}
+
+.logo-pagina {
+  width: 4.688rem;
+  height: 4.688rem;
+  padding: 0;
+  margin: 0;
+}
+
+.container-ul {
+  display: flex;
+
+  li a {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+  }
+}

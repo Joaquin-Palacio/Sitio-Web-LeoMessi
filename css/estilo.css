@@ -1,26 +1,4 @@
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: url("../assets/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-}
-
-h1, h2, h3 {
-  color: #fff;
-}
-
-h1 {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
+/* Import Partials */
 /* Estilos Header ------------------------ */
 header nav {
   background-color: #fff;
@@ -40,11 +18,6 @@ header nav {
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
-}
-
-main {
-  margin: 10px;
-  padding: 20px;
 }
 
 /* Estilos Footer ----------------------------------- */
@@ -89,19 +62,6 @@ main {
   .footer .social-icons li {
     margin: 5px 0;
   }
-}
-
-/* Estilos btn-arrow-up */
-.btn-arrow-up {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: rgb(98, 211, 255);
-  color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
 }
 
 /* Estilos Section Dorsales --------------------------------- */
@@ -354,6 +314,47 @@ label {
 .btn-form:hover {
   transition: 0.8s;
   background-color: #008000;
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  color: #fff;
+}
+
+h1 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+main {
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Estilos btn-arrow-up */
+.btn-arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(98, 211, 255);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
 }
 
 /*# sourceMappingURL=estilo.css.map */

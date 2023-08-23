@@ -1,0 +1,49 @@
+/* Estilos Estadisticas ------------------------------------ */
+.section-stats {
+  background-color: $white-color;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  h2 {
+    color: $black-color;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .container-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+      margin-bottom: 10px;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+
+  .container-logo-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .logo-stats {
+      max-width: 100%;
+      height: auto;
+      max-height: 200px;
+      margin: 5px 0 10px 0;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+/* Estilos Biografia ------------------------------------- */
+
+.section-style-bio {
+  background-color: $white-color;
+
+  h2 {
+    text-decoration: underline;
+    font-style: italic;
+    color: $black-color;
+  }
+
+  h3 {
+    color: $black-color;
+    font-size: 20px;
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  img {
+    width: 80%;
+  }
+}
